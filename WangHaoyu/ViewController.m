@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+    NSLog(@"测试语句测试语句");
 }
 
 - (void)didReceiveMemoryWarning {
