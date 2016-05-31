@@ -15,6 +15,7 @@
 		482A8DC61CF40BA3005F69A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482A8DC41CF40BA3005F69A6 /* LaunchScreen.storyboard */; };
 		482A8DD11CF40BA3005F69A6 /* WangHaoyuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 482A8DD01CF40BA3005F69A6 /* WangHaoyuTests.m */; };
 		482A8DDC1CF40BA3005F69A6 /* WangHaoyuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 482A8DDB1CF40BA3005F69A6 /* WangHaoyuUITests.m */; };
+		56ECF0B1DF25ECFD9AD3C8D3 /* libPods-WangHaoyu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C210ABB936F25BE7EC240D2 /* libPods-WangHaoyu.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42F41453AEABE6521C882473 /* Pods-WangHaoyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WangHaoyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-WangHaoyu/Pods-WangHaoyu.release.xcconfig"; sourceTree = "<group>"; };
 		482A8DB31CF40BA3005F69A6 /* WangHaoyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangHaoyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482A8DB71CF40BA3005F69A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		482A8DB91CF40BA3005F69A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		482A8DD71CF40BA3005F69A6 /* WangHaoyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangHaoyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		482A8DDB1CF40BA3005F69A6 /* WangHaoyuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WangHaoyuUITests.m; sourceTree = "<group>"; };
 		482A8DDD1CF40BA3005F69A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51CA031719236016FD4E017C /* Pods-WangHaoyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WangHaoyu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WangHaoyu/Pods-WangHaoyu.debug.xcconfig"; sourceTree = "<group>"; };
+		6C210ABB936F25BE7EC240D2 /* libPods-WangHaoyu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WangHaoyu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56ECF0B1DF25ECFD9AD3C8D3 /* libPods-WangHaoyu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BDCE598375930564DB797D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C210ABB936F25BE7EC240D2 /* libPods-WangHaoyu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		482A8DAA1CF40BA3005F69A6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				482A8DCF1CF40BA3005F69A6 /* WangHaoyuTests */,
 				482A8DDA1CF40BA3005F69A6 /* WangHaoyuUITests */,
 				482A8DB41CF40BA3005F69A6 /* Products */,
+				4B80452B9572E30BDCC1303D /* Pods */,
+				1BDCE598375930564DB797D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = WangHaoyuUITests;
 			sourceTree = "<group>";
 		};
+		4B80452B9572E30BDCC1303D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51CA031719236016FD4E017C /* Pods-WangHaoyu.debug.xcconfig */,
+				42F41453AEABE6521C882473 /* Pods-WangHaoyu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 482A8DE01CF40BA3005F69A6 /* Build configuration list for PBXNativeTarget "WangHaoyu" */;
 			buildPhases = (
+				37270F66496939559ED22C6D /* 📦 Check Pods Manifest.lock */,
 				482A8DAF1CF40BA3005F69A6 /* Sources */,
 				482A8DB01CF40BA3005F69A6 /* Frameworks */,
 				482A8DB11CF40BA3005F69A6 /* Resources */,
+				9EC3591A0781123C4732B2CC /* 📦 Embed Pods Frameworks */,
+				9DAABA8B7CBA734F33FAB165 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37270F66496939559ED22C6D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DAABA8B7CBA734F33FAB165 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WangHaoyu/Pods-WangHaoyu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC3591A0781123C4732B2CC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WangHaoyu/Pods-WangHaoyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		482A8DAF1CF40BA3005F69A6 /* Sources */ = {
@@ -416,22 +491,24 @@
 		};
 		482A8DE11CF40BA3005F69A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CA031719236016FD4E017C /* Pods-WangHaoyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WangHaoyu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sina.WangHaoyu;
+				PRODUCT_BUNDLE_IDENTIFIER = sina.WangHaoyuTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		482A8DE21CF40BA3005F69A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F41453AEABE6521C882473 /* Pods-WangHaoyu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WangHaoyu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sina.WangHaoyu;
+				PRODUCT_BUNDLE_IDENTIFIER = sina.WangHaoyuTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,6 +578,7 @@
 				482A8DE21CF40BA3005F69A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		482A8DE31CF40BA3005F69A6 /* Build configuration list for PBXNativeTarget "WangHaoyuTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +587,7 @@
 				482A8DE51CF40BA3005F69A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		482A8DE61CF40BA3005F69A6 /* Build configuration list for PBXNativeTarget "WangHaoyuUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +596,7 @@
 				482A8DE81CF40BA3005F69A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
