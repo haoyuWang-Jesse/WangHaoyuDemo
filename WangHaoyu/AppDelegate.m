@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "UMCommunity.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 
 static  NSString *mapBaidu_apk = @"nNgGMeGxXvfN8M6vaqOjZZ6WS1BwQuru";
+static  NSString * UMAppKey = @"575583db67e58e4397001456";
+static  NSString * UMSecret = @"098daa3bb89cc1f2470b947f5e22f4ad";
+
 
 @interface AppDelegate ()
 
@@ -20,6 +24,9 @@ static  NSString *mapBaidu_apk = @"nNgGMeGxXvfN8M6vaqOjZZ6WS1BwQuru";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // setup UM community
+    [UMCommunity setAppKey:UMAppKey withAppSecret:UMSecret];
+    //setup baiduMap Manager
     self.manager = [BMKMapManager new];
     BOOL ret = [self.manager start:mapBaidu_apk generalDelegate:self];
     !ret ? NSLog(@"baiduMapManager setting failed"):NSLog(@"success");
