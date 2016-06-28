@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WangHaoyu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZFPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>98F6C82D0B42AE7288D86270CE7A3A0C</key>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82759F9A39A2356CBCD261B7FBDA7D1A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3CCC4F08801C7827ED40A02E94BB003</key>
 		<dict>
 			<key>primary</key>
 			<true/>

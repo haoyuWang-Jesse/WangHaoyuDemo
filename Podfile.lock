@@ -1,12 +1,18 @@
 PODS:
-  - BaiduMapKit (2.10.2)
+  - BaiduMapKit (3.0.0)
+  - Masonry (1.0.1)
+  - ZFPlayer (1.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - BaiduMapKit
+  - ZFPlayer
 
 SPEC CHECKSUMS:
-  BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
+  BaiduMapKit: de2a726d5296d6b2dc0e974b683af73153608dcd
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  ZFPlayer: 326ce3f64be0be583d0a9e5e334659ba2e3c5e7f
 
-PODFILE CHECKSUM: 721948f6541097026bd9ae77b09e651bb57ce5d2
+PODFILE CHECKSUM: e1fe63841e35b9bce1bdfc47373fa4324ea2441d
 
 COCOAPODS: 1.0.0
